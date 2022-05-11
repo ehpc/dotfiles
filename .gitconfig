@@ -1,0 +1,5 @@
+[user]
+	name = ehpc
+	email = ehpc@ehpc.io
+[init]
+	defaultBranch = main
