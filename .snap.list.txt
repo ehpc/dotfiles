@@ -1,0 +1,5 @@
+Name         Version    Rev    Tracking       Publisher    Notes
+core         16-2.54.4  12834  latest/stable  canonical*   core
+core18       20220428   2409   latest/stable  canonical*   base
+hello-world  6.4        29     latest/stable  canonical*   -
+nvim         v0.7.0     2181   latest/stable  neovim-snap  classic
