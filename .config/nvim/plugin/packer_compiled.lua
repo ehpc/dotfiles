@@ -69,6 +69,16 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/ehpc/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/ehpc/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   molokai = {
     loaded = true,
     path = "/home/ehpc/.local/share/nvim/site/pack/packer/start/molokai",
@@ -79,10 +89,20 @@ _G.packer_plugins = {
     path = "/home/ehpc/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/ehpc/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/ehpc/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-textsubjects"] = {
+    loaded = true,
+    path = "/home/ehpc/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textsubjects",
+    url = "https://github.com/rrethy/nvim-treesitter-textsubjects"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -97,7 +117,7 @@ _G.packer_plugins = {
   ["papercolor-theme"] = {
     loaded = true,
     path = "/home/ehpc/.local/share/nvim/site/pack/packer/start/papercolor-theme",
-    url = "https://github.com/NLKNguyen/papercolor-theme"
+    url = "https://github.com/nlknguyen/papercolor-theme"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -107,7 +127,7 @@ _G.packer_plugins = {
   ["shades-of-purple.vim"] = {
     loaded = true,
     path = "/home/ehpc/.local/share/nvim/site/pack/packer/start/shades-of-purple.vim",
-    url = "https://github.com/Rigellute/shades-of-purple.vim"
+    url = "https://github.com/rigellute/shades-of-purple.vim"
   },
   spacecamp = {
     loaded = true,

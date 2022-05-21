@@ -1,37 +1,57 @@
 return require('packer').startup(function()
 
-  -- Plugin manager
+  -- plugin manager
   use 'wbthomason/packer.nvim'
 
-  -- Common lua functions
+  -- common lua functions
   use 'nvim-lua/plenary.nvim'
 
-  -- LSP
+  -- lsp
   use 'neovim/nvim-lspconfig'
 
-  -- Syntax highlighter
+  -- syntax highlighter
   use {
     'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
+    run = ':tsupdate'
   }
 
-  -- Icons for telescope
+  use 'rrethy/nvim-treesitter-textsubjects'
+
+  -- icons for telescope
   use 'kyazdani42/nvim-web-devicons'
 
-  -- Compiled fuzzy finder
+  -- compiled fuzzy finder
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
-  -- Fuzzy finder main package
+  -- fuzzy finder main package
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Status line
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
+
+  -- Tabs
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+
+  -- File explorer
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons',
+    },
+    tag = 'nightly'
+  }
+
   -- Themes
-  use 'NLKNguyen/papercolor-theme'
+  use 'nlknguyen/papercolor-theme'
   use 'tomasr/molokai'
   use 'dracula/vim'
   use 'jaredgorski/spacecamp'
-  use 'Rigellute/shades-of-purple.vim'
+  use 'rigellute/shades-of-purple.vim'
 
 end)

@@ -33,7 +33,7 @@ set colorcolumn=80,120
 """ Text
 
 set nowrap
-set list
+" set list
 set listchars=tab:→\ ,space:·,nbsp:␣,trail:•,precedes:«,extends:»
 
 """ Themes
@@ -48,10 +48,10 @@ let mapleader = " "
 
 """ Plugins
 
+lua require('plugins')
+
 augroup packer_user_config
   autocmd!
   autocmd BufWritePost plugins.lua source <afile> | PackerCompile
 augroup end
-
-lua require('plugins')
 

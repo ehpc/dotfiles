@@ -8,10 +8,10 @@ require'nvim-treesitter.configs'.setup {
   incremental_selection = {
     enable = true,
     keymaps = {
-      init_selection = "<C-w>",
-      node_incremental = "<C-w>",
-      scope_incremental = "<C-e>",
-      node_decremental = "<C-q>",
+      init_selection = "<A-w>",
+      node_incremental = "<A-w>",
+      scope_incremental = "<A-e>",
+      node_decremental = "<A-q>",
     },
   },
 }
@@ -25,4 +25,16 @@ require'nvim-treesitter.configs'.setup {
 vim.opt.foldlevel = 99
 vim.opt.foldmethod = 'expr'
 vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+
+require('nvim-treesitter.configs').setup {
+  textsubjects = {
+    enable = true,
+    prev_selection = ',',
+    keymaps = {
+      ['.'] = 'textsubjects-smart',
+      [';'] = 'textsubjects-container-outer',
+      ['i;'] = 'textsubjects-container-inner',
+    },
+  },
+}
 
