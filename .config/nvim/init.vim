@@ -5,6 +5,10 @@ set noerrorbells
 set noswapfile
 set nobackup
 
+""" Splits
+
+set splitright
+
 """ Tabs
 
 set tabstop=2 softtabstop=2
