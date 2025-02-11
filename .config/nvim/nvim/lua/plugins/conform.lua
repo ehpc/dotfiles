@@ -3,6 +3,7 @@ return {
 	event = { "BufWritePre" },
 	cmd = { "ConformInfo" },
 	lazy = true,
+	enabled = false,
 	keys = {
 		{
 			-- Customize or remove this keymap to your liking

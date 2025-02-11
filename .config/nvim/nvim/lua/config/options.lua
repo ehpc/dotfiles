@@ -1,5 +1,3 @@
-print("Loading options...")
-
 -- Allow unsaved buffer
 vim.opt.hidden = true
 
@@ -7,7 +5,7 @@ vim.opt.hidden = true
 vim.opt.guifont = "FiraCode Nerd Font:h14"
 
 -- Clipboard
-vim.opt.clipboard="unnamedplus"
+vim.opt.clipboard = "unnamedplus"
 
 -- Line numbers
 vim.opt.number = true
@@ -24,3 +22,13 @@ vim.opt.smartindent = true
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 
+vim.opt.list = true
+vim.opt.listchars = {
+  -- space = "·",
+  tab = "→ ",
+  nbsp = "+",
+  trail = "⋅",
+  extends = "❯",
+  precedes = "❮",
+  -- eol = "¬",
+}
