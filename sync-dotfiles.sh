@@ -1,8 +1,12 @@
 #!/bin/sh
 
 # SSH
+rm -rf .ssh
 mkdir -p .ssh
 cp -af ~/.ssh/config .ssh/config
+
+# Remove old config folder
+rm -rf .config
 
 # Neovim
 mkdir -p .config
