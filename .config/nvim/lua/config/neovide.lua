@@ -1,5 +1,5 @@
 if vim.g.neovide then
-	print("Loading Neovide config...")
-
-	vim.g.neovide_fullscreen = true
+  if vim.loop.os_uname().sysname == "Darwin" then
+  	vim.g.neovide_fullscreen = true
+  end
 end

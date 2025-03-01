@@ -1,6 +1,9 @@
 -- Allow unsaved buffer
 vim.opt.hidden = true
 
+-- Colors
+vim.opt.termguicolors = true
+
 -- Fonts
 vim.opt.guifont = "FiraCode Nerd Font:h14"
 
